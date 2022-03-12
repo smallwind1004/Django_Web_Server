@@ -3,7 +3,7 @@ from django.shortcuts import render
 
 # Create your views here.
 def main_blog(request):
-    context = {'like':range(10)}
+    context = {'x': 10, 'y': 20}
     return render(request, 'main_blog/my_blog.html', context)
 
 def about(request):

@@ -1,16 +1,7 @@
-<!DOCTYPE html>
-{% load static %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>部落格</title>
-    <link rel="stylesheet" href="{% static 'main_blog/css/main_blog.css' %}">
-</head>
-<body>
-    {% include 'main_blog/menu.html' %}
+{% extends 'main_blog/base.html' %}
 
-    <h2>部落格 -- 平凡到超凡的起點</h2>
-</body>
-</html>
+{% block heading %}文章{% endblock %}
+
+{% block content %}
+<h2>部落格 -- 平凡到超凡的起點</h2>
+{% endblock %}
